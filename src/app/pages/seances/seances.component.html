@@ -1,0 +1,5 @@
+<h1 class="text-center display-4 p-4">Séances disponibles</h1>
+<div *ngFor="let seance of seances" class="text-center">
+     <p class="mt-5">{{seance.date}}</p>
+     <a class="btn bg-dark bg-gradient text-white" routerLink="">Choisir cette séance</a>
+</div>

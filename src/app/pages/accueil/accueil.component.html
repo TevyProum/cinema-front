@@ -1,0 +1,6 @@
+<h1 class="mt-5 display-4 text-center">Choisissez votre cinéma</h1>
+<div class="d-flex justify-content-center">
+    <div *ngFor="let cinema of cinemas">
+        <a class="btn btn-outline-warning m-3" routerLink="cinemas/{{cinema._id}}">{{cinema.nom}}</a>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<h1 class="text-center display-4 p-4">Les films à l'affiche</h1>
+<div class="d-flex justify-content-center">
+    <div *ngFor="let film of films">
+        <div class="card shadow p-3 mb-5 bg-body rounded border-white m-4">
+            <h5 class="text-center text-uppercase">{{film.nom}}</h5>
+            <img src="{{film.imgURL}}" class="mt-3">
+            <a class="btn bg-dark bg-gradient text-white mt-2" routerLink="/seances/{{film._id}}">Réserver</a>
+        </div>
+    </div>
+</div>
